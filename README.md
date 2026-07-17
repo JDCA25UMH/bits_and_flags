@@ -7,21 +7,26 @@ y el newbit que es un número  (0 /1), cuales se colocan como parámetros de fun
 
 El usuario avanza dentro del programa por medio de estados en que se realizan las distintas operaciones para comparar valores, y obtener
 un status final, a partir de las instrucciones que indico el usuario, los estos son los siguientes:
-"indicar", "llave", "Revisar", "Foco", "Super"
+"indicar", "llave", "Revisar", "Foco", "Super".
 
+El código lua del que se implementa esta demostración ,pertenece a una función dentro de una clase, cual indica el status_flag inicial en la función de constructor
+de la clase, valor que equivale a la siguiente cifra 100000000000000000000, en donde cada dígito concatenado representa el valor inicial.
+
+Sin embargo, en el código que realizamos solo queremos representar los bits y las banderas, por lo tanto esto se representa solo como un valor
+dentro de un ámbito global.
 
 <h3>Codigo en lua de modificación de bits, que representan banderas</h3>
-
+´´´lua
 function Hotel:modifyStatusFlags(position, newBit)
 
 
-&nbsp;  local mask = 1 << position
+  local mask = 1 << position
 
 
-&nbsp;   self.statusFlags = (self.statusFlags & ~mask) | ((newBit << position) & mask)
+   self.statusFlags = (self.statusFlags & ~mask) | ((newBit << position) & mask)
  
 
- &nbsp;     return self.statusFlags
+     return self.statusFlags
 
 
 end
@@ -49,7 +54,9 @@ en donde se realiza la mascara equiparando la operación con la variable mask, a
 determinar la habitación en la que se va a modificar el correspondiente bit.
 
 
-<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" /><br>
+<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" />
+
+<br>
 
 
 Luego de obtener el valor enmascarado de la posición, se invierte la mascara, para tapar la habitación enmascarada,
@@ -65,14 +72,22 @@ se compara con el valor de la llave por medio de otra operación AND &, y asi en
 
 
 <img width="678" height="452" alt="foco" src="https://github.com/user-attachments/assets/e8e5117d-be0f-4e41-b2bb-cac01ddb4d85" />
+
 <br>
 
 
 Comparamos los resultados, entre la habitación a la cual verificamos si se encontraba 
 apagada, y la cual señalamos con el correspondiente foco, y llave, en las 
-operaciones lógicas AND &y se monta todo por medio de una operación lógica OR |,
+operaciones lógicas AND & y se monta todo por medio de una operación lógica OR |,
 para hallar el correspondiente status de la banderas.
 
 <img width="677" height="450" alt="montar" src="https://github.com/user-attachments/assets/821274d9-e67a-4dd1-9331-9770ab285fd3" />
 
+<br>
+
+Y así, logramos instruir al programa para que nos permita modificar un bit, en la bandera que nos representa, desarrollando las indicaciones iniciales 
+proporcionadas por el usuario, hasta completar la operación, cambiando el bit de la correspondiente bandera.
+
+En el presente ejemplo desarrollamos lo relacionado con la función Hotel:modifyStatusFlags(1, 1), por medio de la cual se pasó de estar el bit 1 en 0, a 
+estar el bit 1 en 1. 
 
