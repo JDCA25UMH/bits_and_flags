@@ -1,11 +1,10 @@
+<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/29569458-0e3f-4348-8da8-bf319482e22f" />
 
 <h1>Demo de bits y banderas</h1>
 
 Demostración creada en Liko 12, con el proposito de explicar el funcionamiento de la modificación 
 de banderas en bits, por medio de parametros de función para modificar valores, acorde con lo solicitado por el usuario, 
 en lo relacionado con posición, y el newbit que es un número de 0 o 1, cuales se colocan como parametros de función.
-
-
 
 <img width="678" height="456" alt="ejemplo1 " src="https://github.com/user-attachments/assets/56f90ff1-195a-4c5f-9652-29034203896a" />
 
@@ -16,5 +15,6 @@ modificar la bandera.
 La modificación de banderas de bit, consiste en enmascarar la posición del valor que se quiere modicar, representando la posición, como exponente en base 2,
 en donde se realiza la mascara equiparando la operación con la variable mask.
 
+<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" />
 
 
