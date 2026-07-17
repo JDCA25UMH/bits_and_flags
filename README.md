@@ -7,12 +7,12 @@ en lo relacionado con posición, y el newbit que es un número  (0 /1), cuales s
 
 --Codigo en lua de modificación de bits, que representan banderas
 
-function mdf(flags, position, newbit)
-  local mask = 1 << position
-  local apagado = flags & ~mask
-  local foco = (newbit << position) & mask
-  return apagado | foco
-end
+--function mdf(flags, position, newbit)
+  --local mask = 1 << position
+  --local apagado = flags & ~mask
+  --local foco = (newbit << position) & mask
+  --return apagado | foco
+-end
 
 Los bits son unidades de 0 o 1, que indican si algo está apagado o prendido.
 Las banderas, es lo que representa los bits, en este caso cada bit representa una habitación de hotel, demostrando si esta 
