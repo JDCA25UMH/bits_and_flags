@@ -18,13 +18,9 @@ dentro de un ámbito global.
 <h3>Codigo en lua de modificación de bits, que representan banderas</h3>
 ```lua
 function Hotel:modifyStatusFlags(position, newBit)
-
-local mask = 1 << position
-
- self.statusFlags = (self.statusFlags & ~mask) | ((newBit << position) & mask)
- 
- return self.statusFlags
-
+  local mask = 1 << position
+  self.statusFlags = (self.statusFlags & ~mask) | ((newBit << position) & mask)
+  return self.statusFlags
 end
 
 Los bits son unidades de 0 o 1, que indican si algo está apagado o prendido.
