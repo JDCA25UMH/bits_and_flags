@@ -55,7 +55,7 @@ determinar la habitación en la que se va a modificar el correspondiente bit.
 
 
 <img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" />
-<br>
+
 Luego de obtener el valor enmascarado de la posición, se invierte la mascara, para tapar la habitación enmascarada,
 con el propósito de señalar en donde vamos a modificar el bit,comparando los bits de la mascara invertida, con el valor inicial de Status Flag, 
 realizando la operación lógica AND &, estableciendo la correspondencia entre los estados de apagado del Status Flag, y la mascara invertida.
