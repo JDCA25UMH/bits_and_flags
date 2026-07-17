@@ -1,5 +1,6 @@
 
 <h1>Demo de bits y banderas</h1>
+Demostración creada en Liko 12, con el proposito de explicar el funcionamiento de la modificación de banderas en bits.
 
 <img width="678" height="456" alt="ejemplo1 " src="https://github.com/user-attachments/assets/56f90ff1-195a-4c5f-9652-29034203896a" />
 
