@@ -25,7 +25,7 @@ Los bits son unidades de 0 o 1, que indican si algo está apagado o prendido.
 Las banderas, es lo que representa los bits, en este caso cada bit representa una habitación de hotel, demostrando si esta 
 prendida o apagada la luz, en ese lugar.
 
-<img width="678" height="456" alt="ejemplo1" src="https://github.com/user-attachments/assets/56f90ff1-195a-4c5f-9652-29034203896a" />
+<img width="678" height="456" alt="ejemplo1" src="https://github.com/user-attachments/assets/56f90ff1-195a-4c5f-9652-29034203896a" /><br>
 
 Son 21 habitaciones de hotel representadas desde la habitación (0-20), en donde el usuario debe colocar como
 primer argumento la posición cuál pretende encender, (0 - 20), y como segundo argumento el newbit entre (0/1) de la habitación de la cual pretende 
@@ -45,7 +45,7 @@ determinar la habitación en la que se va a modificar el correspondiente bit.
 
 local mask = 1 << position
 
-<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" />
+<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" /><br>
 
 
 Luego de obtener el valor enmascarado de la posición, se invierte la mascara, para tapar la habitación
@@ -53,14 +53,14 @@ con el propósito de señalar en donde vamos a modificar el bit,comparando los b
 realizando la operación lógica AND &, estableciendo la correspondencia entre los estados de apagado del Status Flag, y la mascara invertida.
 
 <img width="681" height="451" alt="apagar" src="https://github.com/user-attachments/assets/7a814a68-0bfa-4066-8744-78f63e006b0e" />
-
+<br>
 Se extrae el valor del foco, cuál es el mismo de la mascara, pero siempre teniendo en cuenta que de debe multiplicar por el newbit,
 dada la correspondencia que existe entre la llave y el foco; en donde evidenciamos si la habitación que le corresponde a la llave se debe encontrar encendida o apagada,
 se compara con el valor de la llave por medio de otra operación AND &, y asi encontramos la habitación a la cual le corresponde el foco.
 
 
 <img width="678" height="452" alt="foco" src="https://github.com/user-attachments/assets/e8e5117d-be0f-4e41-b2bb-cac01ddb4d85" />
-
+<br>
 Comparamos los resultados, entre la habitación a la cual verificamos si se encontraba 
 apagada, y la cual señalamos con el correspondiente foco, y llave, en las 
 operaciones lógicas AND &y se monta todo por medio de una operación lógica OR |,
