@@ -5,12 +5,12 @@ Demostración creada en Liko 12, con el propósito de explicar el funcionamiento
 de banderas en bits,  acorde con los parámetros establecidos por el usuario, 
 en lo relacionado con posición, y el newbit que es un número  (0 /1), cuales se colocan como parámetros de función mdf(position,newbit).
 
---Codigo en lua de modificación de bits, que representan banderas
+<h3>Codigo en lua de modificación de bits, que representan banderas</h3>
 
---function mdf(flags, position, newbit)
-  --local mask = 1 << position
-  --local apagado = flags & ~mask
-  --local foco = (newbit << position) & mask
+function mdf(flags, position, newbit)<br>
+   local mask = 1 << position
+    local apagado = flags & ~mask
+    local foco = (newbit << position) & mask
   --return apagado | foco
 -end
 
