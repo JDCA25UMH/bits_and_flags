@@ -43,7 +43,7 @@ La modificación de banderas de bit, consiste en enmascarar la posición del val
 en donde se realiza la mascara equiparando la operación con la variable mask, a esto lo llamamos llave, así obtenemos el criterio inicial para 
 determinar la habitación en la que se va a modificar el correspondiente bit.
 
-local mask = 1 << position
+
 
 <img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" /><br>
 
