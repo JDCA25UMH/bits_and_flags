@@ -13,11 +13,17 @@ un status final, a partir de las instrucciones que indico el usuario, los estos 
 <h3>Codigo en lua de modificación de bits, que representan banderas</h3>
 
 function Hotel:modifyStatusFlags(position, newBit)
+
+
 &nbsp;  local mask = 1 << position
+
 
 &nbsp;   self.statusFlags = (self.statusFlags & ~mask) | ((newBit << position) & mask)
  
+
  &nbsp;     return self.statusFlags
+
+
 end
 
 Los bits son unidades de 0 o 1, que indican si algo está apagado o prendido.
