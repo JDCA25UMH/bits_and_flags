@@ -1,4 +1,3 @@
-<img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/29569458-0e3f-4348-8da8-bf319482e22f" />
 
 <h1>Demo de bits y banderas</h1>
 
