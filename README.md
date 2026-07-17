@@ -19,4 +19,20 @@ en donde se realiza la mascara equiparando la operación con la variable mask.
 
 <img width="570" height="385" alt="mask" src="https://github.com/user-attachments/assets/0e014417-6a2e-470c-9508-34c576a59a3b" />
 
+Luego de obtener el valor enmascarado de la posición, para colocar luego el newbit, se invierte la mascara, y se 
+realiza la operación logica AND &, comparando los bits de la mascara invertifa, con el valor iniciar de Status Flag, con el proposito de observar si la llave 
+invertida es compatible con el foco.
+
+<img width="681" height="451" alt="apagar" src="https://github.com/user-attachments/assets/7a814a68-0bfa-4066-8744-78f63e006b0e" />
+
+
+
+
+
+
+
+
+
+
+
 
