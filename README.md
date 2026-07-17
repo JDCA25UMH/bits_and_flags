@@ -9,7 +9,8 @@ en lo relacionado con posición, y el newbit que es un número de 0 o 1, cuales 
 
 Son 21 habitaciones de hotel representandas desde la habitación 0 hasta la 20, en donde el usuario debe colocar como
 primer argumento la posicion cual pretende encender, (un número entre 0 y 20), y como segundo argumento el newbit entre 0 y 1 de la habitación de la cual pretende 
-modificar la bandera.
+modificar la bandera, para ello el usuario debe presionar la tecla "tab", para poder escribir el primer valor, y volver a presionar la tecla "tab", para escribir el 
+segundo valor.
 
 La modificación de banderas de bit, consiste en enmascarar la posición del valor que se quiere modicar, representando la posición, como exponente en base 2,
 en donde se realiza la mascara equiparando la operación con la variable mask.
