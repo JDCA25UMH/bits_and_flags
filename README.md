@@ -61,7 +61,7 @@ con el propósito de señalar en donde vamos a modificar el bit,comparando los b
 realizando la operación lógica AND &, estableciendo la correspondencia entre los estados de apagado del Status Flag, y la mascara invertida.
 
 <img width="681" height="451" alt="apagar" src="https://github.com/user-attachments/assets/7a814a68-0bfa-4066-8744-78f63e006b0e" />
-<br>
+
 
 Se extrae el valor del foco, cuál es el mismo de la mascara, pero siempre teniendo en cuenta que de debe multiplicar por el newbit,
 dada la correspondencia que existe entre la llave y el foco; en donde evidenciamos si la habitación que le corresponde a la llave se debe encontrar encendida o apagada,
@@ -70,7 +70,7 @@ se compara con el valor de la llave por medio de otra operación AND &, y asi en
 
 <img width="678" height="452" alt="foco" src="https://github.com/user-attachments/assets/e8e5117d-be0f-4e41-b2bb-cac01ddb4d85" />
 
-<br>
+
 
 
 Comparamos los resultados, entre la habitación a la cual verificamos si se encontraba 
@@ -80,7 +80,7 @@ para hallar el correspondiente status de la banderas.
 
 <img width="677" height="450" alt="montar" src="https://github.com/user-attachments/assets/821274d9-e67a-4dd1-9331-9770ab285fd3" />
 
-<br>
+
 
 Y así, logramos instruir al programa para que nos permita modificar un bit, en la bandera que nos representa, desarrollando las indicaciones iniciales 
 proporcionadas por el usuario, hasta completar la operación, cambiando el bit de la correspondiente bandera.
