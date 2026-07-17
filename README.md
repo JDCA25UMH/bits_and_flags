@@ -10,7 +10,7 @@ un status final, a partir de las instrucciones que indico el usuario, los estos 
 "indicar", "llave", "Revisar", "Foco", "Super".
 
 El código lua del que se implementa esta demostración ,pertenece a una función dentro de una clase, cual indica el status_flag inicial en la función de constructor
-de la clase, valor que equivale a la siguiente cifra 100000000000000000000, en donde cada dígito concatenado representa el valor inicial.
+de la clase, valor que equivale a la siguiente representación visual en binario 100000000000000000000,en donde cada dígito concatenado representa el valor inicial.
 
 Sin embargo, en el código que realizamos solo queremos representar los bits y las banderas, por lo tanto esto se representa solo como un valor
 dentro de un ámbito global.
