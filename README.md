@@ -2,23 +2,22 @@
 <h1>Demo de bits y banderas</h1>
 
 Demostración creada en Liko 12, con el propósito de explicar el funcionamiento de la modificación 
-de banderas en bits,  acorde con los parámetros establecidos por el usuario, 
-en lo relacionado con posición, y el newbit que es un número  (0 /1), cuales se colocan como parámetros de función mdf(position,newbit).
+de banderas en bits,  acorde con los parámetros establecidos por el usuario,en lo relacionado con posición, 
+y el newbit que es un número  (0 /1), cuales se colocan como parámetros de función mdf(position,newbit).
+
+El usuario avanza dentro del programa por medio de estados en que se realizan las distintas operaciones para comparar valores, y obtener
+un status final, a partir de las instrucciones que indico el usuario, los estos son los siguientes:
+"indicar", "llave", "Revisar", "Foco", "Super"
+
 
 <h3>Codigo en lua de modificación de bits, que representan banderas</h3>
 
-
-function mdf(flags, position, newbit)
-
+function Hotel:modifyStatusFlags(position, newBit)
 &nbsp;  local mask = 1 << position
 
-&nbsp;  local apagado = flags & ~mask
-  
-  &nbsp; local foco = (newbit << position) & mask
+&nbsp;   self.statusFlags = (self.statusFlags & ~mask) | ((newBit << position) & mask)
  
-&nbsp;  return apagado | foco
-
-
+ &nbsp;     return self.statusFlags
 end
 
 Los bits son unidades de 0 o 1, que indican si algo está apagado o prendido.
