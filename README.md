@@ -11,16 +11,16 @@ en lo relacionado con posición, y el newbit que es un número  (0 /1), cuales s
 function mdf(flags, position, newbit)
 
 
-  local mask = 1 << position
+&nbsp;  local mask = 1 << position
 
   
-  local apagado = flags & ~mask
+&nbsp;  local apagado = flags & ~mask
   
   
   local foco = (newbit << position) & mask
   
   
-  return apagado | foco
+&nbsp;  return apagado | foco
 
 
 end
