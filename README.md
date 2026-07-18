@@ -29,9 +29,8 @@ function mdf(position, newBit)
   statusFlags = (statusFlags & ~mask) | ((newBit << position) & mask)
    return statusFlags
 end
+"`lua
 
-
-```lua
 Los bits son unidades de 0 o 1, que indican si algo está apagado o prendido.
 Las banderas, es lo que representa los bits, en este caso cada bit representa una habitación de hotel, demostrando si esta 
 prendida o apagada la luz, en ese lugar.
