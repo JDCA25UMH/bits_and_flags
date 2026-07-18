@@ -6,7 +6,7 @@ de banderas en bits,  acorde con los parámetros establecidos por el usuario,en 
 y el newbit que es un número  (0 /1), cuales se colocan como parámetros de función mdf(position,newbit).
 
 El usuario avanza dentro del programa por medio de estados en que se realizan las distintas operaciones para comparar valores, y obtener
-un status final, a partir de las instrucciones que indico el usuario, los estos son los siguientes:"indicar", "llave", "Revisar", "Foco", "Super".
+un status final, a partir de las instrucciones que indico el usuario, los estados son los siguientes:"indicar", "llave", "Revisar", "Foco", "Super".
 
 En el estado "indicar" se recogen las instrucciones del usuario en la posición y el newbit en que pretenda hacer la modificación; en la "llave" se muestra el valor que enmascara lo que indicó el usuario; "Revisar" es el estado que apaga lo que este con anterioridad, para estar en la capacidad de poder modificar el newbit que exista en esa posición, en el estado "Foco" se establece la correspondencia entre la posición indicada y el newbit, y en "Super" se comparan las operaciones lógicas AND &, realizadas en los dos estados anteriores, por medio de una operación lógica OR |.
 
