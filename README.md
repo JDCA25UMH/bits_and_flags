@@ -22,6 +22,8 @@ dentro de un ámbito global.
 
 <h3>Codigo en lua de modificación de bits, que representan banderas</h3>
 ```lua
+
+
 statusFlags = 1 << 20 -- global
                   
 function mdf(position, newBit)
