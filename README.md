@@ -8,7 +8,7 @@ y el newbit que es un número  (0 /1), cuales se colocan como parámetros de fun
 El usuario avanza dentro del programa por medio de estados en que se realizan las distintas operaciones para comparar valores, y obtener
 un status final, a partir de las instrucciones que indico el usuario, los estos son los siguientes:"indicar", "llave", "Revisar", "Foco", "Super".
 
-En el estado "indicar" se recogen las instrucciones del usuario en la posición y el newbit en que pretenda hacer la modificación; en la "llave" que es el valor que enmascara lo que indicó el usuario; "Revisar" es el estado que apaga lo que este con anterioridad, para estar en la capacidad de poder modificar el newbit que exista en esa posición, en el estado "Foco" se establece la correspondencia entre la posición indicada y el newbit, y en "Super" se comparan las operaciones lógicas AND &, realizadas en los dos estados anteriores, por medio de una operación lógica OR |.
+En el estado "indicar" se recogen las instrucciones del usuario en la posición y el newbit en que pretenda hacer la modificación; en la "llave" se muestra el valor que enmascara lo que indicó el usuario; "Revisar" es el estado que apaga lo que este con anterioridad, para estar en la capacidad de poder modificar el newbit que exista en esa posición, en el estado "Foco" se establece la correspondencia entre la posición indicada y el newbit, y en "Super" se comparan las operaciones lógicas AND &, realizadas en los dos estados anteriores, por medio de una operación lógica OR |.
 
  
 El código lua del que se implementa esta demostración, pertenece a una función dentro de una clase, cual indica el status_flag inicial en la función de constructor
