@@ -2,7 +2,7 @@
 <h1>Demo de bits y banderas</h1>
 
 Demostración creada en Liko 12, con el propósito de explicar el funcionamiento de la modificación 
-de banderas en bits,  acorde con los parámetros establecidos por el usuario,en lo relacionado con posición, 
+de banderas en bits,  acorde con los parámetros establecidos por el usuario,en lo relacionado con posición,como un número entre (0-20),
 y el newbit que es un número  (0 /1), cuales se colocan como parámetros de función mdf(position,newbit).
 
 El usuario avanza dentro del programa por medio de estados en que se realizan las distintas operaciones para comparar valores, y obtener
