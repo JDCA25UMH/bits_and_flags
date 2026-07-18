@@ -85,6 +85,11 @@ para hallar el correspondiente status de la banderas.
 Y así, logramos instruir al programa para que nos permita modificar un bit, en la bandera que nos representa, desarrollando las indicaciones iniciales 
 proporcionadas por el usuario, hasta completar la operación, cambiando el bit de la correspondiente bandera.
 
+
+ANTES: 100000000000000000000
+DESPUÉS:100000000000000000010
+
+
 En el presente ejemplo desarrollamos lo relacionado con la función Hotel:modifyStatusFlags(1, 1), por medio de la cual se pasó de estar el bit 1 en 0, a 
 estar el bit 1 en 1. 
 
