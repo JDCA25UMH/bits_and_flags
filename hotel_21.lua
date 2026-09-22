@@ -1,6 +1,7 @@
 
 function _init()
-
+ bit_0 = 1
+ bit_1 = 0 
 end
 cambio_apagar = false
 local state = {
@@ -19,11 +20,19 @@ function _update()
 
 end
 
-function bit_status(bit_cero,bit_uno,
-bit_dos,bit_tres,bit_cuatro,bit_cinco,
-bit_seis,bit_siete,bit_ocho,bit_nueve,
-bit_diez)
-
+function bit_status(bit_0,bit_1,
+bit_2,bit_3,bit_4,bit_5,
+bit_6,bit_7,bit_8,bit_9,
+bit_10,bit_11,bit_12,bit_13,
+bit_14,bit_15,bit_16,
+bit_17,bit_18, 
+bit_19,bit_20)
+return bit_0,bit_1,bit_2,bit_3,
+bit_4,bit_5,bit_6,bit_7,
+bit_8,bit_9,bit_10,bit_11,
+bit_12,bit_13,bit_14,bit_15,
+bit_16,bit_17,bit_18,
+bit_19,bit_20
 end
 local Status_Flag =
 "100000000000000000000"
@@ -45,9 +54,9 @@ end
 
 function dibujar(bit,x,y)
 if bit == 1 then 
-cl =10
+ cl =10
 elseif bit == 0 then 
-cl = 5
+ cl = 5
 end
  color(cl)
  rect(x,y,10,10)
@@ -223,6 +232,7 @@ end
 
 end
 end
+
 function _textinput(t)
 if uno == true then 
  position = position ..t
@@ -230,33 +240,33 @@ if uno == true then
  newbit = newbit..t
 end
 end
+
 function _draw()
 clear()
 
-hab_21= dibujar(1,10,30)--21
-hab_20= dibujar(0,25,30)--20
-hab_19= dibujar(0,40,30)--19
-hab_18= dibujar(0,55,30)--18
-hab_17= dibujar(0,70,30)--17
-hab_16= dibujar(0,85,30)--16
-hab_15= dibujar(0,100,30)--15
-hab_14= dibujar(0,115,30)--14
-hab_13= dibujar(0,130,30)--13
-hab_12= dibujar(0,145,30)--12
-hab_11= dibujar(0,160,30)--11
-hab_10= dibujar(0,10,50)--10
-hab_9=  dibujar(0,25,50)--9
-hab_8=  dibujar(0,40,50)--8
-hab_7=  dibujar(0,55,50)--7
-hab_6=  dibujar(0,70,50)--6
-hab_5=  dibujar(0,85,50)--5 
-hab_4=  dibujar(0,100,50)--4
-hab_3=  dibujar(0,115,50)--3
-hab_2= dibujar(0,130,50)--2
-hab_1= dibujar(0,145,50)--1
+hab_21= dibujar(bit_0,10,30)--21
+hab_20= dibujar(bit_1,25,30)--20
+hab_19= dibujar(bit_2,40,30)--19
+hab_18= dibujar(bit_3,55,30)--18
+hab_17= dibujar(bit_4,70,30)--17
+hab_16= dibujar(bit_5,85,30)--16
+hab_15= dibujar(bit_6,100,30)--15
+hab_14= dibujar(bit_7,115,30)--14
+hab_13= dibujar(bit_8,130,30)--13
+hab_12= dibujar(bit_9,145,30)--12
+hab_11= dibujar(bit_10,160,30)--11
+hab_10= dibujar(bit_11,10,50)--10
+hab_9=  dibujar(bit_12,25,50)--9
+hab_8=  dibujar(bit_13,40,50)--8
+hab_7=  dibujar(bit_14,55,50)--7
+hab_6=  dibujar(bit_15,70,50)--6
+hab_5=  dibujar(bit_16,85,50)--5 
+hab_4=  dibujar(bit_17,100,50)--4
+hab_3=  dibujar(bit_18,115,50)--3
+hab_2= dibujar(bit_19,130,50)--2
+hab_1= dibujar(bit_20,145,50)--1
 
 color(5)
-
 
 if state["indicar"]==true then 
 color(7)
@@ -324,6 +334,7 @@ para_foco(f_num1,f_num2,f_num3,f_num4,f_num5)
 num1,num2,num3,num4,num5,num6,num7 =
 mask_put(mask_number,mask_table,mask_strg,
 mask_mostrar,mask_total,not_mask_total,and_b)
+
 local tabla_02 = and_bit(num5,f_num5)
 
 color(11)
@@ -332,12 +343,39 @@ color(3)
 print("AND_Apagado="..table.concat(num7),10,80)
 print("AND_Foco="..
 table.concat(and_bit(num5,f_num5)),10,90)
-print("Flags="..table.concat(or_bit(num7,tabla_02))
+print("Flags="..
+table.concat(or_bit(num7,tabla_02))
 ,10,100)
 
 
+ bit_0, bit_1,bit_2,bit_3,bit_4,bit_5,
+bit_6,bit_7,bit_8,bit_9,bit_10,
+bit_11,bit_12,bit_13,bit_14,bit_15,
+bit_16,bit_17,bit_18,bit_19,bit_20 = 
+bit_status(
+or_bit(num7,tabla_02)[1],
+or_bit(num7,tabla_02)[2],
+or_bit(num7,tabla_02)[3],
+or_bit(num7,tabla_02)[4],
+or_bit(num7,tabla_02)[5],
+or_bit(num7,tabla_02)[6],
+or_bit(num7,tabla_02)[7],
+or_bit(num7,tabla_02)[8],
+or_bit(num7,tabla_02)[9],
+or_bit(num7,tabla_02)[10],
+or_bit(num7,tabla_02)[11],
+or_bit(num7,tabla_02)[12],
+or_bit(num7,tabla_02)[13],
+or_bit(num7,tabla_02)[14],
+or_bit(num7,tabla_02)[15],
+or_bit(num7,tabla_02)[16],
+or_bit(num7,tabla_02)[17],
+or_bit(num7,tabla_02)[18],
+or_bit(num7,tabla_02)[19],
+or_bit(num7,tabla_02)[20],
+or_bit(num7,tabla_02)[21])
+
 
 end
 
 end
-
